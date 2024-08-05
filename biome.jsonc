@@ -1,0 +1,86 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
+	"formatter": {
+		"enabled": false,
+		"formatWithErrors": false,
+		"include": [ "**/*.ts", "**/*.html" ],
+		"ignore": [],
+		"attributePosition": "auto",
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineWidth": 120
+	},
+	"files": {
+		"include": [
+			"./**/*.js",
+			"./**/*.css",
+			"./**/*.html"
+		],
+		"ignore": [
+			"./.vscode/**",
+			"./assets/js/jquery-3.7.1.slim.min.js"
+		]
+	},
+	"javascript": {
+		"globals": [ "$words", "$wrapper", "$panels", "jQuery" ],
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
+		},
+		"formatter": {
+			"arrowParentheses": "asNeeded",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "double",
+			"quoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"semicolons": "always",
+			"trailingCommas": "es5"
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true,
+			"trailingCommas": "none",
+			"indentWidth": 2,
+			"indentStyle": "tab",
+			"lineWidth": 120
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"all": true,
+				"noForEach": "off",
+				"noExcessiveCognitiveComplexity": "off"
+			},
+			"correctness": {
+				"all": true,
+				"noUnusedVariables": "warn",
+				"noUnreachable": "warn",
+				"noUnusedImports": "warn",
+				"noNodejsModules": "off"
+			},
+			"style": {
+				"all": true,
+				"useImportType": "off",
+				"useNamingConvention": "off",
+				"useFilenamingConvention": "off",
+				"noParameterProperties": "off"
+			},
+			"suspicious": {
+				"all": true,
+				"noAssignInExpressions": "off",
+				"noDoubleEquals": "warn",
+				"noConsoleLog": "off",
+				"noEmptyBlockStatements": "warn",
+				"noDebugger": "off"
+			}
+		},
+		"ignore": [ ]
+	}
+}
