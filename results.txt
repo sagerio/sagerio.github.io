@@ -1,2 +1,0 @@
-Checked 2 files in 4ms. No fixes applied.
-Found 2 warnings.
